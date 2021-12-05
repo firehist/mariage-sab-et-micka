@@ -1,0 +1,157 @@
+body, html {
+    background-color: black;
+    overflow: hidden;
+    color: white;    
+
+    --header-height: 15vh;
+    --footer-height: 40vh;
+    --content-height: calc(100vh - var(--footer-height))
+}
+
+.btn {
+    padding: 2rem 3.5rem!important;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 3vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Luxurious Script', cursive;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-shadow: 0 0 50px rgb(250, 208, 208);
+    font-size: 5rem;
+}
+
+.logo span.title {
+    line-height: 3.8rem;
+}
+
+.logo span.subtitle {
+    align-self: end;
+    display: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+.container-fluid {
+    display: block;
+    background-color: transparent;
+    background-image: radial-gradient(at center center, #072436 0%, #01131e 80%);
+    height: 100vh;  
+}
+
+.row {
+    position: relative;
+    height: var(--content-height);
+}
+
+.row .bg {
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.row .bg-tree-solo {
+    background-image: url(./img/tree-solo.webp);
+    background-position: bottom center;
+    background-size: cover;
+    opacity: 1;
+}
+
+.row .bg-christmas {
+    background-image: url(./img/christmas.webp);
+    background-position: bottom center;
+    background-size: cover;
+    opacity: 1;
+}
+
+.row .bg-snowflake-1 {
+    background-position: 13.05% 21%;
+    background-image: url(./img/snowflake-1.webp);
+    transform: translateY(189.2px);
+}
+
+.row .bg-snowflake-2 {
+    background-image: url(./img/snowflake-2.webp);
+    background-position: 71.5% 8.5%;
+    transform: translateY(82.8px);
+}
+
+.row .bg-snowflake-3 {
+    background-image: url(./img/snowflake-3.webp);
+    background-position: 93.5% 45.4%;
+    transform: translateY(71px);
+}
+
+.row .bg-snowflake-4 {
+    background-image: url(./img/snowflake-4.webp);
+    background-position: 70.9% 74.7%;
+    transform: translateY(47.3px);
+}
+
+.row .bg-trees {
+    background-image: url(./img/home-bg-1.webp);
+    background-position: bottom center;
+    background-size: cover;
+    opacity: 1;
+}
+
+.row .bg-snowflakes {
+    background-image: url(./img/home-bg-px-1.webp);
+    background-position: bottom center;
+    background-size: cover;
+    opacity: 1;
+}
+
+.row.buttons {
+    background-color: white;
+    height: var(--footer-height);
+}
+
+.row > div {
+    height: 100%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button .oi {
+    margin-right: 8px;
+}
+
+.content-title {
+    display: flex;
+    font-size: 10rem;
+    font-family: 'Luxurious Script', cursive;
+    transform: rotateZ(-4deg) translateY(-7vh);
+}
+
+.content-title span {
+    font-size: 3rem;
+    font-family: 'Luxurious Script', cursive;
+    transform: translateY(-8vh);
+}
