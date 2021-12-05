@@ -4,15 +4,13 @@ body, html {
     color: white;    
 
     --header-height: 15vh;
-    --footer-height: 40vh;
+    --footer-height: 20vh;
     --content-height: calc(100vh - var(--footer-height))
 }
 
 .btn {
-    padding: 2rem 3.5rem!important;
-    font-size: 1.5rem;
     text-transform: uppercase;
-    border-radius: 3vh;
+    border-radius: 2vh;
 }
 
 header {
@@ -91,7 +89,7 @@ header {
 .row .bg-snowflake-1 {
     background-position: 13.05% 21%;
     background-image: url(./img/snowflake-1.webp);
-    transform: translateY(189.2px);
+    transform: translateY(287.2px);
 }
 
 .row .bg-snowflake-2 {
@@ -132,11 +130,14 @@ header {
 }
 
 .row > div {
-    height: 100%;  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.row > div.bg {
+    height: 100%;
 }
 
 button .oi {
@@ -145,13 +146,30 @@ button .oi {
 
 .content-title {
     display: flex;
-    font-size: 10rem;
+    font-size: 10vh;
+    line-height: 5vh;
     font-family: 'Luxurious Script', cursive;
-    transform: rotateZ(-4deg) translateY(-7vh);
+    transform: rotateZ(-4deg);
 }
 
 .content-title span {
-    font-size: 3rem;
+    font-size: 3vh;
     font-family: 'Luxurious Script', cursive;
-    transform: translateY(-8vh);
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    .btn {
+        padding-top: 1.5rem!important;
+        padding-bottom: 1.5rem!important;
+        padding-right: 3rem!important;
+        padding-left: 3rem!important;
+    }
+}
+
+@media (orientation: landscape) {
+    body, html {
+        --header-height: 25vh;
+        --footer-height: 20vh;
+        --content-height: calc(100vh - var(--footer-height))
+    }
 }
