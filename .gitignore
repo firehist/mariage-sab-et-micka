@@ -1,3 +1,4 @@
 node_modules
+!./node_modules/open-iconic/font/css/open-iconic-bootstrap.css
 .DS_Store
 package-lock.json

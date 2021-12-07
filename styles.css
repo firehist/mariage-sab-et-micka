@@ -1,10 +1,12 @@
 body, html {
-    background-color: black;
+    background-color: white;
     overflow: hidden;
-    color: white;    
+    color: white;
+    height: 100vh;
+    width: 100vw;
 
     --header-height: 15vh;
-    --footer-height: 20vh;
+    --footer-height: 30vh;
     --content-height: calc(100vh - var(--footer-height))
 }
 
@@ -129,6 +131,10 @@ header {
     height: var(--footer-height);
 }
 
+.row.buttons > div {
+    margin-bottom: calc(var(--footer-height)/4);
+}
+
 .row > div {
     display: flex;
     flex-direction: column;
@@ -152,7 +158,7 @@ button .oi {
     transform: rotateZ(-4deg);
 }
 
-.content-title span {
+.content-title span.subtitle {
     font-size: 3vh;
     font-family: 'Luxurious Script', cursive;
 }
@@ -172,4 +178,8 @@ button .oi {
         --footer-height: 20vh;
         --content-height: calc(100vh - var(--footer-height))
     }
+}
+
+.modal {
+    color: black;
 }

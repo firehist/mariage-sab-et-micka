@@ -6,28 +6,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>A Basic HTML5 Template</title>
+    <title>Mariage Sabrina & Mickaël - 11 décembre 2021 ⭐🌟🚀</title>
     <meta name="description" content="A simple HTML5 Template for new projects.">
     <meta name="author" content="SitePoint">
 
     <meta property="og:title" content="A Basic HTML5 Template">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-    <meta property="og:description" content="A simple HTML5 Template for new projects.">
+    <meta property="og:description" content="Mariage de Sabrina et Mickaël - 11 décembre 2021">
     <meta property="og:image" content="image.png">
 
-    <link rel="icon" href="/favicon.ico">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="./favicon_io/favicon.ico">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap" rel="stylesheet">
-
-    <link href="./node_modules/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css?v=1.0">
 
 </head>
@@ -37,50 +35,88 @@
     <div>
 
         <header>
-            <div class="logo">
-                <span class="title">Le Oui</span>
-                <span class="subtitle">Magazine</span>
+            <div class="logo" data-aos="slide-down">
+                <span class="title" data-aos="fade-in" data-aos-delay="100">Le Oui</span>
+                <span class="subtitle" data-aos="fade-in" data-aos-delay="150">Magazine</span>
             </div>
         </header>
 
         <article class="container-fluid">
             <div class="row">
                 <div class="bg content-title">
-                    Vive les mariés !
-                    <span>Sabrina & Mickael - 11 décembre 2021</span>
+                    <span>Vive les mariés !</span>
+                    <span class="subtitle">Sabrina & Mickael - 11 décembre 2021</span>
                 </div>
-                <div class="bg bg-snowflake-4"></div>
-                <div class="bg bg-snowflake-3"></div>
-                <div class="bg bg-snowflake-2"></div>
-                <div class="bg bg-snowflake-1"></div>
+                <div class="bg bg-snowflake-4" data-aos="slide-right"></div>
+                <div class="bg bg-snowflake-3" data-aos="slide-left"></div>
+                <div class="bg bg-snowflake-2" data-aos="slide-down"></div>
+                <div class="bg bg-snowflake-1" data-aos="slide-up"></div>
                 <div class="bg bg-snowflakes"></div>
                 <div class="bg bg-tree-solo"></div>
                 <div class="bg bg-trees"></div>
                 <div class="bg bg-christmas"></div>
             </div>
             <div class="row buttons">
-                <div class="col-12 col-md-6">
-                    <button type="button" class="btn btn-danger btn-lg">
+                <div class="col-12 col-md-6" data-aos="zoom-in-up" data-aos-delay="250">
+                    <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#crosswordPuzzles">
                         <span class="oi oi-eye"></span>
                         Mot croisé
                     </button>
                 </div>
-                <div class="col-12 col-md-6">
-                    <button type="button" class="btn btn-danger btn-lg">
+                <div class="col-12 col-md-6" data-aos="zoom-in-up" data-aos-delay="250">
+                    <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">
                         <span class="oi oi-camera-slr"></span>
                         Les photos
                     </button>
                 </div>
             </div>
+            <div class="row">
+                <iframe src="https://hopla.photo/h-Ny3NXseofuTL/"></iframe>
+            </div>
         </article>
     </div>
 
+    <div class="modal fade" id="crosswordPuzzles" tabindex="-1" aria-labelledby="crosswordPuzzles" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <a title="Ouvrir dans un nouvel onglet 💪" href="img/crossword-puzzles.png" target="_blank">
+                        <img src="./img/crossword-puzzles.png" />
+                    </a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a href="img/crossword-puzzles.png" target="_blank" type="button" class="btn btn-danger">Télécharger</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="modal fade" id="crosswordPuzzles" tabindex="-1" aria-labelledby="crosswordPuzzles" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <a title="Ouvrir dans un nouvel onglet 💪" href="img/crossword-puzzles.png" target="_blank">
+                        <img src="./img/crossword-puzzles.png" />
+                    </a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a href="img/crossword-puzzles.png" target="_blank" type="button" class="btn btn-danger">Télécharger</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js"></script>
+
 </body>
 
 </html>
