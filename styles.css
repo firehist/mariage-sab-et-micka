@@ -183,3 +183,9 @@ button .oi {
 .modal {
     color: black;
 }
+
+.iframe {
+    --iframe-top: 90px;
+    margin-top: calc(-1 * var(--iframe-top));
+    height: calc(100% + var(--iframe-top));
+}

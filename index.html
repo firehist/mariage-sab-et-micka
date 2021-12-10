@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Mariage Sabrina & Mickaël - 11 décembre 2021 ⭐🌟🚀</title>
-    <meta name="description" content="A simple HTML5 Template for new projects.">
-    <meta name="author" content="SitePoint">
+    <meta name="description" content="Mariage de Sabrina et Mickaël - 11 décembre 2021">
+    <meta name="author" content="Sabrina & Mickaël">
 
-    <meta property="og:title" content="A Basic HTML5 Template">
+    <meta property="og:title" content="Mariage de Sabrina et Mickaël - 11 décembre 2021">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+    <meta property="og:url" content="https://sabrina-et-micka.fr">
     <meta property="og:description" content="Mariage de Sabrina et Mickaël - 11 décembre 2021">
     <meta property="og:image" content="image.png">
 
@@ -27,7 +27,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css?v=1.0">
-
 </head>
 
 <body>
@@ -57,17 +56,19 @@
                 <div class="bg bg-christmas"></div>
             </div>
             <div class="row buttons">
-                <div class="col-12 col-md-6" data-aos="zoom-in-up" data-aos-delay="250">
+                <div class="d-flex flex-column flex-sm-row  justify-content-around" data-aos="zoom-in-up"
+                    data-aos-delay="250">
                     <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal"
                         data-bs-target="#crosswordPuzzles">
-                        <span class="oi oi-eye"></span>
-                        Mot croisé
+                        <span class="d-none d-sm-inline-block oi oi-eye"></span>
+                        <span class="d-none d-sm-inline-block">Solutions mot croisé</span>
+                        <span class="d-sm-inline-block">Mot croisé</span>
                     </button>
-                </div>
-                <div class="col-12 col-md-6" data-aos="zoom-in-up" data-aos-delay="250">
-                    <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">
-                        <span class="oi oi-camera-slr"></span>
-                        Les photos
+                    <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#sharePhotos">
+                        <span class="d-none d-sm-block oi oi-camera"></span>
+                        <span class="d-none d-sm-block">Partager vos photos !</span>
+                        <span class="d-block d-sm-none">Photos</span>
                     </button>
                 </div>
             </div>
@@ -78,32 +79,53 @@
     </div>
 
     <div class="modal fade" id="crosswordPuzzles" tabindex="-1" aria-labelledby="crosswordPuzzles" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-body text-center">
-                    <a title="Ouvrir dans un nouvel onglet 💪" href="img/crossword-puzzles.png" target="_blank">
-                        <img src="./img/crossword-puzzles.png" />
-                    </a>
+
+                    <div id="carouselExampleIndicators" class="carousel slide w-100 h-100" data-bs-interval="false" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a class="d-block" title="Ouvrir dans un nouvel onglet 💪" href="img/crossword-puzzles.png" target="_blank">
+                                    <img class="img-fluid" src="./img/crossword-puzzles.png" />
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                test 123
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon oi oi-caret-left text-danger" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon oi oi-caret-right text-danger" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                    <a href="img/crossword-puzzles.png" target="_blank" type="button" class="btn btn-danger">Télécharger</a>
+                    <a href="img/crossword-puzzles.png" target="_blank" type="button" class="btn btn-danger"><span class="oi oi-cloud-download"></span> Télécharger</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="crosswordPuzzles" tabindex="-1" aria-labelledby="crosswordPuzzles" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+    <div class="modal fade" id="sharePhotos" tabindex="-1" aria-labelledby="sharePhotos" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-body text-center">
-                    <a title="Ouvrir dans un nouvel onglet 💪" href="img/crossword-puzzles.png" target="_blank">
-                        <img src="./img/crossword-puzzles.png" />
-                    </a>
+                <div class="modal-header">
+                    <h5 class="modal-title">Partagez les meilleurs (et les pires) moments !</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-body text-center overflow-hidden">
+                    <iframe src="https://hopla.photo/h-Ny3NXseofuTL/" class="iframe w-100"></iframe>
+                </div>
+                <div class="modal-footer d-flex">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-                    <a href="img/crossword-puzzles.png" target="_blank" type="button" class="btn btn-danger">Télécharger</a>
                 </div>
             </div>
         </div>
